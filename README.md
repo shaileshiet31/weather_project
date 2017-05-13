@@ -29,7 +29,7 @@ Tempereture-->
 		are April through September (April,May,June,July,August,Sep) on the Northern Hemisphere (positive latiudes) and 
 		the winter months are October through March (Oct,Nov,Dec,Jan,Feb,March), and VICE VERSA for the Southern 
 		Hemisphere(negitive atiudes).Also the mid months intensity will be more than other months, so every months is having
-		there own intensity level which will be furher act on old tempreture from step 'a'
+		there own intensity level which will be furher act on old tempreture from step 'a'.
 		
 	       c)The tempreture result from step 'b' will be then anlaysed by tempreture intensity by hours in noon we experience 
 	       more temperature intensity then in evening and in night the weigtage scores are given for all individual hours of a day 
