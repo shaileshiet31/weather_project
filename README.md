@@ -22,10 +22,9 @@ Tempereture-->
 		For locations below 20°N: Temperature = 80°F.
 		For locations between 20°N and 60°N: Temperature = -0.988 *(latitude) + 96.827F.
 		
-		b)The tempreture result from step 'a' will be then anlaysed by tempreture intensity by months ,The summer months are 			April through September (April,May,June,July,August,Sep) on the Northern Hemisphere (positive latiudes) and the winter 			months are October through March (Oct,Nov,Dec,Jan,Feb,March), and VICE VERSA for the Southern Hemisphere(negitive 			latiudes).
-		also the mid months intensity will be more than other months, so every months is having there own intensity level which 		will be furher act on old tempreture from step 'a'
+		b)The tempreture result from step 'a' will be then anlaysed by tempreture intensity by months ,The summer months are                       April through September (April,May,June,July,August,Sep) on the Northern Hemisphere (positive latiudes) and the winter                   months are October through March (Oct,Nov,Dec,Jan,Feb,March), and VICE VERSA for the Southern Hemisphere(negitive                       atiudes).Also the mid months intensity will be more than other months, so every months is having there own intensity                     level which will be furher act on old tempreture from step 'a'
 		
-	c)The tempreture result from step 'b' will be then anlaysed by tempreture intensity by hours in noon we experience more temperature intensity then in evening and in night the weigtage scores are given for all individual hours of a day 
+	       c)The tempreture result from step 'b' will be then anlaysed by tempreture intensity by hours in noon we experience more                    temperature intensity then in evening and in night the weigtage scores are given for all individual hours of a day 
 	
 pressure-->pressure at given altitude can be also calculated by below formula
 	   formula for calculation is 
