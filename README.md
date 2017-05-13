@@ -3,7 +3,7 @@
 This Project is used to simulate weather data in the form of latitude,longitude,altitude|datetime|condition|temperature|pressure|humidity  taking into account things like atmosphere, topography, geography,oceanography) .The generated Data will mimic measurements at various locations and times
 
 
-##Alogorithms & Understanding
+## Alogorithms & Understanding
 
 The different attribute of weather envoirnement and place locations are genereted on behalf of below understanding and facts
 
@@ -17,7 +17,6 @@ date-->any random date from a range of current date to past 3 years(default) can
 
 tempereture-->
 	a)tempreture of any place is affected by its latitude and altitude there is a temperature relationship between latitude and altitude for more details  visit http://webinquiry.org/examples/temps/
-	
 		Temperature relation ship with altitude -->Temperature = -0.0026* (Elevation in feet) 
 		Temperature relation ship with latitude -->
 		For locations below 20°N: Temperature = 80°F.
@@ -93,10 +92,10 @@ it will run the program and ask for inputs
 
 ## Authors
 
-* **Shailesh Gupta** -(https://github.com/shaileshiet31)
+Shailesh Gupta -(https://github.com/shaileshiet31)
 
 
-## Acknowledgments & Refrences
+## Acknowledgments & References
 
 * http://webinquiry.org/examples/temps/
 * https://www.mide.com/pages/air-pressure-at-altitude-calculator
