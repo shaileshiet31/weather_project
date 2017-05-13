@@ -3,17 +3,17 @@
 This Project is used to simulate weather data in the form of latitude,longitude,altitude|datetime|condition|temperature|pressure|humidity  taking into account things like atmosphere, topography, geography,oceanography) .The generated Data will mimic measurements at various locations and times.
 
 
-## Alogorithms & Understanding
+## Algorithms & Understanding
 
-The different attribute of weather envoirnement and place locations are genereted on behalf of below understanding and facts
+The different attribute of weather envoirnement and place locations are genereted on behalf of below understanding and facts.
 
-Latitude-->By default +-10 range of random latitudes lower and upper range will be created on behalf of entered latitude
+Latitude-->By default +-10 range of random latitudes lower and upper range will be created on behalf of entered latitude.
 
-Longitude-->By default +-10 range of random longitudes lower and upper range will be created on behalf of entered longitude
+Longitude-->By default +-10 range of random longitudes lower and upper range will be created on behalf of entered longitude.
 
-Altitude-->By default random value from a range of 2 to 200 will be picked
+Altitude-->By default random value from a range of 2 to 200 will be picked.
 
-Date-->any random date from a range of current date to past 3 years(default) can be picked 
+Date-->Any random date from a range of current date to past 3 years(default) can be picked .
 
 Tempereture-->	
 		a)tempreture of any place is affected by its latitude and altitude there is a temperature relationship between latitude 		and altitude for more details  visit http://webinquiry.org/examples/temps/.
