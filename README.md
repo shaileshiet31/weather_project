@@ -4,6 +4,54 @@ This Project is used to simulate weather data in the form
 of latitude,longitude,altitude|datetime|condition|temperature|pressure|humidity taking into account things like
 atmosphere, topography, geography,oceanography) .The generated Data will mimic measurements at various locations and times.
 
+### Prerequisites
+1)JDK must be intalled 
+
+2)Maven must be installed 
+
+1)JAVA_HOME should be set in envoirnment user variables
+
+2)M2_HOME should be set in envoirnment user variables
+
+## Getting Started
+1)Download the zipped project to local system 
+
+2)Extact the downloded zipped file in some directory (Example-->D:\weather_project-master)
+
+
+### Installing & Running
+
+1)Open cmd and navigate to extracted folder (Example-->D:\weather_project-master\weather_project-master)
+or type -->
+
+cd /d "D:\weather_project-master\weather_project-master" 
+in terminal
+
+2)type -->mvn install
+
+this will build the project  and create executable jar in target subdirectory folder
+
+3)navigate to target sub folder in cmd (type--> cd target ) 
+
+4)Type --> java -jar WeatherSimulation-0.0.1-SNAPSHOT.jar
+
+This will run the program and ask for inputs
+
+  #### Inputs Required
+    
+  a)no of records to generate
+  
+  b)latitude  (Note:By default +-10 range of random latitudes lower and upper range will be created on behalf of entered latitude)
+  
+  c)longitude  (Note:By default +-10 range of random latitudes lower and upper range will be created on behalf of entered latitude)
+  
+  d)file path-->output file path 
+
+  #### Output Generated
+         
+  The result of execution will be written to file path from (d) step.
+  Format of result will be latitude,longitude,altitude|datetime|condition|temperature|pressure|humidity
+
 ## Source Main Class and Resources
 Main Class java file: WhetherSimulationEngine.java 
 
@@ -63,55 +111,6 @@ Any random date from a range of current date to past 3 years(default) can be pic
    snow->it is assumed that altitudes with higher values , less pressure and less temperature can cause of snow
    rain->with high humidity,moderate range of altitudes and mild temperature
 
-
-
-### Prerequisites
-1)JDK must be intalled 
-
-2)Maven must be installed 
-
-1)JAVA_HOME should be set in envoirnment user variables
-
-2)M2_HOME should be set in envoirnment user variables
-
-## Getting Started
-1)Download the zipped project to local system 
-
-2)Extact the downloded zipped file in some directory (Example-->D:\weather_project-master)
-
-
-### Installing & Running
-
-1)Open cmd and navigate to extracted folder (Example-->D:\weather_project-master\weather_project-master)
-or type -->
-
-cd /d "D:\weather_project-master\weather_project-master" 
-in terminal
-
-2)type -->mvn install
-
-this will build the project  and create executable jar in target subdirectory folder
-
-3)navigate to target sub folder in cmd (type--> cd target ) 
-
-4)Type --> java -jar WeatherSimulation-0.0.1-SNAPSHOT.jar
-
-This will run the program and ask for inputs
-
-  #### Inputs Required
-    
-  a)no of records to generate
-  
-  b)latitude  (Note:By default +-10 range of random latitudes lower and upper range will be created on behalf of entered latitude)
-  
-  c)longitude  (Note:By default +-10 range of random latitudes lower and upper range will be created on behalf of entered latitude)
-  
-  d)file path-->output file path 
-
-  #### Output Generated
-         
-  The result of execution will be written to file path from (d) step.
-  Format of result will be latitude,longitude,altitude|datetime|condition|temperature|pressure|humidity
 
 ## Built With
 * [Maven](https://maven.apache.org/) - Dependency Management
