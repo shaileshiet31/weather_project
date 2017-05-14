@@ -4,10 +4,12 @@ This Project is used to simulate weather data in the form
 of latitude,longitude,altitude|datetime|condition|temperature|pressure|humidity taking into account things like
 atmosphere, topography, geography,oceanography) .The generated Data will mimic measurements at various locations and times.
 
-## Algorithms & Understanding
-
+## Source Main Class and Resources
 Main Class java file: WhetherSimulationEngine.java 
+
 Resource bundle file: application.properties (All Application default values are present which can be changed)
+
+## Algorithms & Understanding
 
 The different attributes of weather envoirnement and place locations are genereted on behalf of below understanding and facts.
 
