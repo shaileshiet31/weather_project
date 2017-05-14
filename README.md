@@ -86,14 +86,16 @@ this will build the class files and create executable jars in target subdirector
 3)navigate to target sub folder in cmd (type--> cd target ) 
 
 4)Type --> java -jar WeatherSimulation-0.0.1-SNAPSHOT.jar
+
 it will run the program and ask for inputs
+
         #### Inputs Required
           a)no of records to generate
           b)latitude  (Note:By default +-10 range of random latitudes lower and upper range will be created on behalf of entered latitude)
           c)longitude  (Note:By default +-10 range of random latitudes lower and upper range will be created on behalf of entered latitude)
           d)file path-->output file path 
 
-        ####Output Generated
+        #### Output Generated
          
          The result of execution will be written to file path from (d) step.
          the format of result will be latitude,longitude,altitude|datetime|condition|temperature|pressure|humidity
