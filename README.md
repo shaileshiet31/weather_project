@@ -51,6 +51,9 @@ This will run the program and ask for inputs
          
   The result of execution will be written to file path from (d) step.
   Format of result will be latitude,longitude,altitude|datetime|condition|temperature|pressure|humidity
+  
+ ## Built With
+* [Maven](https://maven.apache.org/) - Dependency Management
 
 ## Source Main Class and Resources
 Main Class java file: WhetherSimulationEngine.java 
@@ -110,10 +113,6 @@ Any random date from a range of current date to past 3 years(default) can be pic
    condition can be determine as sunny,rain  and snow on behalf pressure, temperature,humidity,alititude as all factors
    snow->it is assumed that altitudes with higher values , less pressure and less temperature can cause of snow
    rain->with high humidity,moderate range of altitudes and mild temperature
-
-
-## Built With
-* [Maven](https://maven.apache.org/) - Dependency Management
 
 ## Contributing
 
