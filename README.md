@@ -92,8 +92,11 @@ it will run the program and ask for inputs
   #### Inputs Required
     
   a)no of records to generate
+  
   b)latitude  (Note:By default +-10 range of random latitudes lower and upper range will be created on behalf of entered latitude)
+  
   c)longitude  (Note:By default +-10 range of random latitudes lower and upper range will be created on behalf of entered latitude)
+  
   d)file path-->output file path 
 
   #### Output Generated
