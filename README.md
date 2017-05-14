@@ -60,12 +60,16 @@ Any random date from a range of current date to past 3 years(default) can be pic
 
 ## Getting Started
 1)Download the zipped project to local system 
+
 2)Extact the downloded zipped file in some directory (Example-->D:\weather_project-master)
 
 ### Prerequisites
 1)JDK must be intalled 
+
 2)Maven must be installed 
+
 1)JAVA_HOME should be set in envoirnment user variables
+
 2)M2_HOME should be set in envoirnment user variables
 
 
@@ -75,9 +79,12 @@ Any random date from a range of current date to past 3 years(default) can be pic
 or type -->
 cd /d "D:\weather_project-master\weather_project-master" 
 in terminal
+
 2)type -->mvn install
 this will build the class files and create executable jars in target subdirectory folder
+
 3)navigate to target sub folder in cmd (type--> cd target ) 
+
 4)Type --> java -jar WeatherSimulation-0.0.1-SNAPSHOT.jar
 it will run the program and ask for inputs
         #### Inputs Required
