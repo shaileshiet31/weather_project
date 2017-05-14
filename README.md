@@ -58,10 +58,7 @@ Any random date from a range of current date to past 3 years(default) can be pic
    snow->it is assumed that altitudes with higher values , less pressure and less temperature can cause of snow
    rain->with high humidity,moderate range of altitudes and mild temperature
 
-## Getting Started
-1)Download the zipped project to local system 
 
-2)Extact the downloded zipped file in some directory (Example-->D:\weather_project-master)
 
 ### Prerequisites
 1)JDK must be intalled 
@@ -72,15 +69,22 @@ Any random date from a range of current date to past 3 years(default) can be pic
 
 2)M2_HOME should be set in envoirnment user variables
 
+## Getting Started
+1)Download the zipped project to local system 
+
+2)Extact the downloded zipped file in some directory (Example-->D:\weather_project-master)
+
 
 ### Installing & Running
 
 1)Open cmd and navigate to extracted folder (Example-->D:\weather_project-master\weather_project-master)
 or type -->
+
 cd /d "D:\weather_project-master\weather_project-master" 
 in terminal
 
 2)type -->mvn install
+
 this will build the class files and create executable jars in target subdirectory folder
 
 3)navigate to target sub folder in cmd (type--> cd target ) 
