@@ -85,13 +85,13 @@ in terminal
 
 2)type -->mvn install
 
-this will build the class files and create executable jars in target subdirectory folder
+this will build the project  and create executable jar in target subdirectory folder
 
 3)navigate to target sub folder in cmd (type--> cd target ) 
 
 4)Type --> java -jar WeatherSimulation-0.0.1-SNAPSHOT.jar
 
-it will run the program and ask for inputs
+This will run the program and ask for inputs
 
   #### Inputs Required
     
