@@ -11,9 +11,7 @@ import org.junit.Test;
 
 import climate.simulation.bean.PlacesClimateBean;
 import climate.simulation.core.base.HumidityCalculation;
-import climate.simulation.core.base.PresureCalculation;
 import climate.simulation.core.impl.HumidityCalculationEarth;
-import climate.simulation.core.impl.PressureCalculationEarth;
 import climate.simulation.util.ApplicationInstance;
 /**
  * Unit Test Case Written for climate.simulation.core.impl.HumidityCalculationEarth 
