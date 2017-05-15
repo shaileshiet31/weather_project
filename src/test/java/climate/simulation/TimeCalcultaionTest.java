@@ -9,7 +9,13 @@ import org.junit.Test;
 import climate.simulation.core.base.TimeCalculations;
 import climate.simulation.core.impl.TimeCalculationEarth;
 import junit.framework.TestCase;
+/**
+ * Unit Test Case Written for climate.simulation.core.impl.TimeCalculationEarth 
+ *
+ * @author  shailesh
+ * @see    climate.simulation.core.impl.TimeCalculationEarth 
 
+ */
 public class TimeCalcultaionTest extends TestCase {
 	
 	@Before
