@@ -9,13 +9,17 @@ import java.util.Date;
 import java.util.Scanner;
 
 import climate.simulation.bean.WheatherCondition;
+import climate.simulation.core.base.HumidityCalculation;
 import climate.simulation.core.base.LocationsCalculation;
 import climate.simulation.core.base.PresureCalculation;
 import climate.simulation.core.base.TempretureCalculation;
+import climate.simulation.core.base.TimeCalculations;
 import climate.simulation.core.base.WhetherConditionPredection;
+import climate.simulation.core.impl.HumidityCalculationEarth;
 import climate.simulation.core.impl.LocationCalculationEarth;
 import climate.simulation.core.impl.PressureCalculationEarth;
 import climate.simulation.core.impl.TempretureCalculationEarth;
+import climate.simulation.core.impl.TimeCalculationEarth;
 import climate.simulation.core.impl.WhetherConditionPredectionEarth;
 import climate.simulation.util.ApplicationInstance;
 import climate.simulation.util.ClimateUtils;
@@ -57,8 +61,10 @@ public class WhetherSimulationEngine
 		
 		
 		LocationsCalculation locationsCalculation=new LocationCalculationEarth() ;
+		TimeCalculations timeCalculations=new TimeCalculationEarth() ;
 		TempretureCalculation tempretureCalculation=new TempretureCalculationEarth();
 		PresureCalculation presureCalculation=new PressureCalculationEarth();
+		HumidityCalculation humidityCalculation=new HumidityCalculationEarth();
 		WhetherConditionPredection whetherConditionPredection=new WhetherConditionPredectionEarth();
 		
 		
@@ -69,14 +75,14 @@ public class WhetherSimulationEngine
 			double latitude=locationsCalculation.generateLatitude(enteredLatitude,null);
 			double longitude=locationsCalculation.generateLongitude(enteredLongitude,null);
 			double altitude=locationsCalculation.generateAltitude(null, null);
-			Date randomDate=locationsCalculation.generateDateTime(null);
+			Date randomDate=timeCalculations.generateDateTime(null);
 			
 			
 			double tempreture=ClimateUtils.calculateTempretureByFactors(latitude, altitude, randomDate,tempretureCalculation);
 			
 			double pressure=presureCalculation.calculatePressureAtAltitude(altitude, tempreture);
 			
-			double humidity=presureCalculation.generateRandomRelativeHumidity(altitude, latitude, longitude, tempreture);
+			double humidity=humidityCalculation.generateRandomRelativeHumidity(altitude, latitude, longitude, tempreture);
 			
 			WheatherCondition condition=whetherConditionPredection.calculateWhetherCondition(pressure, tempreture, humidity, altitude);
 			

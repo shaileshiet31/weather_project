@@ -1,4 +1,4 @@
-package climate.simulation.test;
+package climate.simulation;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,19 +10,15 @@ import org.junit.Before;
 import org.junit.Test;
 
 import climate.simulation.bean.PlacesClimateBean;
+import climate.simulation.core.base.HumidityCalculation;
 import climate.simulation.core.base.PresureCalculation;
+import climate.simulation.core.impl.HumidityCalculationEarth;
 import climate.simulation.core.impl.PressureCalculationEarth;
 import climate.simulation.util.ApplicationInstance;
-/**
- * Unit Test Case Written for climate.simulation.core.impl.PressureCalculationEarth 
- *
- * @author  shailesh
- * @see    climate.simulation.core.impl.PressureCalculationEarth
 
- */
-public class PressureCalculationTest extends TestCase {
+public class HumidityCalculationTest extends TestCase
+{
 
-	
 	private List<PlacesClimateBean>         placesClimateBeanList;
 	ApplicationInstance instance=null;
 	@Before
@@ -71,33 +67,19 @@ public class PressureCalculationTest extends TestCase {
 	public void tearDown() throws Exception {
 		instance=null;
 	}
-
-
-	@Test
-	public void testCalculatePressureAtAltitude() 
-	{
-		PresureCalculation presureCalculation=new PressureCalculationEarth();
-		for(PlacesClimateBean placesClimateBean:placesClimateBeanList)
-		{
-			
-			assertEquals(new Double(placesClimateBean.getPressure()).intValue(),new Double( presureCalculation.calculatePressureAtAltitude(placesClimateBean.getAltitude(), placesClimateBean.getTempreture())).intValue());
-			
-		}
-		
-		
-	}
 	@Test
 	public void testGenerateRandomRelativeHumidity() {
 		
-		PresureCalculation presureCalculation=new PressureCalculationEarth();
+		HumidityCalculation humidityCalculation=new HumidityCalculationEarth();
 		
 		for(PlacesClimateBean placesClimateBean:placesClimateBeanList)
 		{
 			
-			assertNotNull(new Double(presureCalculation.generateRandomRelativeHumidity(placesClimateBean.getAltitude(),placesClimateBean.getLattitude(),placesClimateBean.getLongitude(), placesClimateBean.getTempreture())).intValue());
+			assertNotNull(new Double(humidityCalculation.generateRandomRelativeHumidity(placesClimateBean.getAltitude(),placesClimateBean.getLattitude(),placesClimateBean.getLongitude(), placesClimateBean.getTempreture())).intValue());
 			
 		}
 		
 		
 	}
+
 }

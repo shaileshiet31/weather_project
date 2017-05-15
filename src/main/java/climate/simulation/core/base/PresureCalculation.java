@@ -29,17 +29,6 @@ public interface PresureCalculation
      */
 	public double calculatePressureAtAltitude(double altitude ,double tempreture);
 	
-	/**
-     * It will generate relative humidity   the derivation can be calculated from planets  attributes (altitude,latitude,longitude,tempreture)
-   
-     * @param  altitude
-     * @param  lattude
-     * @param  longitude    
-     * @param  tempreture
-     *       
-   
-     * @return  humidity
-     */
-	public  double generateRandomRelativeHumidity(double altitude ,double latitude,double longitude,double tempreture);
+	
 	
 }

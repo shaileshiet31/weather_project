@@ -1,4 +1,4 @@
-package climate.simulation.test;
+package climate.simulation;
 
 
 

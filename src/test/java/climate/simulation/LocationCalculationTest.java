@@ -1,4 +1,4 @@
-package climate.simulation.test;
+package climate.simulation;
 
 
 
@@ -11,7 +11,9 @@ import org.junit.Before;
 import org.junit.Test;
 
 import climate.simulation.core.base.LocationsCalculation;
+import climate.simulation.core.base.TimeCalculations;
 import climate.simulation.core.impl.LocationCalculationEarth;
+import climate.simulation.core.impl.TimeCalculationEarth;
 /**
  * Unit Test Case Written for climate.simulation.core.impl.LocationCalculationEarth 
  *
@@ -63,14 +65,6 @@ public class LocationCalculationTest extends TestCase {
 		assertNotNull(locationCalculation.generateLongitude(8.0, 12.0));
 		assertNotNull(locationCalculation.generateLongitude(90.0, 15.0));
 		assertNotNull(locationCalculation.generateLongitude(-150.0, 10.0));
-	}
-	@Test
-	public void testGenerateDateTime() 
-	{
-		LocationsCalculation locationCalculation=new	LocationCalculationEarth();
-		assertTrue(new Date(System.currentTimeMillis()).after(locationCalculation.generateDateTime(1)));
-		assertTrue(new Date(System.currentTimeMillis()).after(locationCalculation.generateDateTime(10)));
-		assertTrue(new Date(System.currentTimeMillis()).after(locationCalculation.generateDateTime(3)));
 	}
 
 }

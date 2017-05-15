@@ -4,7 +4,6 @@ package climate.simulation.core.base;
 
 
 
-import java.util.Date;
 /**
  * The interface declared methods for finding location attributes Latitude,Altitude,Longitude and datetime.
  * date time is declared here since its also represent one of the dimension.
@@ -57,13 +56,5 @@ public interface LocationsCalculation
      * @return  longitude
      */
 	public  double generateLongitude(double longitude,Double plusMinusRange);
-	/**
-     * To get Date within range of years from current date time 
-   
-     * @param  uptoYearsRange
-     *         year subrange by defualt 3
-   
-     * @return  Date
-     */
-	public  Date generateDateTime(Integer uptoYearsRange);
+	
 }

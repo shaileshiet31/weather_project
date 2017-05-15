@@ -1,4 +1,4 @@
-package climate.simulation.test;
+package climate.simulation;
 
 
 
@@ -23,8 +23,8 @@ import org.junit.Before;
 import org.junit.Test;
 
 import climate.simulation.bean.PlacesClimateBean;
-import climate.simulation.core.impl.LocationCalculationEarth;
 import climate.simulation.core.impl.TempretureCalculationEarth;
+import climate.simulation.core.impl.TimeCalculationEarth;
 import climate.simulation.util.ClimateUtils;
 
 /**
@@ -129,7 +129,7 @@ public class ClimateUtilsTest extends TestCase {
 	public void testISO8601DateFormat() throws Exception 
 	{
 		 Pattern isoPattern = Pattern.compile("yyyy-MM-dd'T'HH:mm:ss'Z");
-		 String stringDate=ClimateUtils.getISO8601DateFormat(new LocationCalculationEarth().generateDateTime(3));
+		 String stringDate=ClimateUtils.getISO8601DateFormat(new TimeCalculationEarth().generateDateTime(3));
 		 Matcher m = isoPattern.matcher(stringDate);
 		 if(stringDate.contains("Z") && stringDate.contains("T"))
 		 {
