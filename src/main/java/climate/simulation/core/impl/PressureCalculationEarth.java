@@ -1,11 +1,7 @@
 package climate.simulation.core.impl;
 
 
-import java.util.concurrent.ThreadLocalRandom;
-
-import climate.simulation.core.base.HumidityCalculation;
 import climate.simulation.core.base.PresureCalculation;
-import climate.simulation.util.ApplicationInstance;
 
 /**
  * The class is used to define methods for finding pressure  attributes on earth.
